@@ -19,17 +19,18 @@ body {
   box-sizing: border-box;
 }
 
-/* Hero Section */
 .hero-section {
-  width: 100%;
-  height: calc(100vh - 70px); /* Adjust height to avoid navbar overlap */
-  padding-top: 70px; /* Matches navbar height */
+  width: 100vw;
+  height: calc(100vh - 70px); /* Adjusted for navbar height */
+  margin: 0;
+  padding: 0;
   background-image: url('robot.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Optional parallax effect */
+  background-attachment: fixed;
 }
+
 
 /* Navbar */
 .nav {
