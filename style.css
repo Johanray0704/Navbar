@@ -11,7 +11,34 @@
 body {
   background: #f0faff;
 }
+.container-fluid {
+  width: 100%;
+  padding: 0 15px; /* Adds space on smaller screens */
+  margin: 0 auto;   /* Centers the content */
+}
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    padding: 0 10px;
+  }
 
+  .nav {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container-fluid {
+    padding: 0 5px;
+  }
+
+  .nav {
+    height: 60px;
+    padding: 0 5px;
+  }
+
+  .hero-section {
+    height: calc(100vh - 60px);
+  }
+}
 /* Navbar */
 .nav {
   position: fixed;
